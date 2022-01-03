@@ -23,8 +23,6 @@ const ReactApi =()=>{
         fetch('https://swapi.dev/api/people').then(response=>{
         response.json().then(data=>{
             setUser(data.results)
-            console.log(data)
-
             })
         })
         
