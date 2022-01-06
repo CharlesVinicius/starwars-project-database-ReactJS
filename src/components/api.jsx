@@ -20,7 +20,7 @@ const ReactApi =()=>{
     const [user, setUser] = useState([])
 
     useEffect(()=>{
-        fetch('https://swapi.co/api/people').then(response=>{
+        fetch('https://swapi.dev/api/people').then(response=>{
         response.json().then(data=>{
             setUser(data.results)
             })
